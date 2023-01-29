@@ -1,0 +1,30 @@
+@import "vendor";
+
+@import "variables";
+@import "fonts";
+@import "mixins";
+@import "templates";
+@import "settings";
+
+@import "components/header";
+@import "components/hero";
+@import "components/offers";
+@import "components/highRating";
+@import "components/promo";
+@import "components/top";
+@import "components/useful";
+@import "components/applicationForm";
+
+@import "components/breadCrumbs";
+@import "components/catalogPage";
+@import "components/catalog";
+@import "components/activeFilters";
+@import "components/filter";
+
+@import "components/cooperationPage";
+
+@import "components/productPage";
+
+@import "components/contactsPage";
+
+@import "components/footer";

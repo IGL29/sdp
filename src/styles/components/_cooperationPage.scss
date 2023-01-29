@@ -1,0 +1,213 @@
+.title--font-min {
+  font-size: 24px;
+}
+
+.title--mb-30 {
+  margin-bottom: 30px;
+}
+
+.descr {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.container--grid-columns {
+  display: grid;
+  grid-template-columns: minmax(auto, 843px);
+
+  &-630 {
+    display: grid;
+    grid-template-columns: minmax(auto, 630px);
+  }
+}
+
+.suppliers {
+  margin-bottom: 35px;
+
+  &__title {
+    margin-bottom: 15px;
+  }
+}
+
+.list-descr {
+  @extend %reset-list;
+  // line-height: 1.6;
+  font-size: 16px;
+
+
+
+  &__item {
+    line-height: 1.8;
+
+    &--line-height-1-6 {
+      line-height: 1.6;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 8px;
+    }
+
+    &--margin-bottom-19 {
+      &:not(:last-of-type) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  &--padding-left {
+    padding-left: 37px;
+  }
+
+  &--padding-left-26 {
+    padding-left: 26px;
+  }
+
+  &__subtitle {
+    margin-top: 0;
+    margin-bottom: 9px;
+    font-size: 16px;
+    font-weight: 600;
+    color: $secondary;
+  }
+
+  &__descr {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.offer {
+  margin-bottom: 29px;
+
+  &__title {
+    margin-bottom: 13px;
+  }
+}
+
+.benefit {
+  margin-bottom: 34px;
+
+  &__title {
+    margin-bottom: 13px;
+  }
+}
+
+.guarantees {
+
+  &__text {
+    max-width: 625px;
+    padding-top: 20px;
+    padding-left: 109px;
+    padding-bottom: 24px;
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.5;
+    background-image: url("img/pencil.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__list-descr {
+    margin-bottom: 33px;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .benefit {
+    margin-bottom: 39px;
+  }
+
+  .title--mb-30 {
+    margin-bottom: 33px;
+  }
+
+  .bread-crumbs--margin-bottom {
+    margin-bottom: 27px;
+  }
+
+  .guarantees__title {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .bread-crumbs {
+    display: none;
+  }
+
+  .container--padding-top-7 {
+    padding-top: 7px;
+  }
+
+  .suppliers {
+
+    &__descr {
+      font-size: 14px;
+    }
+
+    &__title {
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+  }
+
+  .offer {
+    margin-bottom: 34px;
+  }
+
+  .offer__title {
+    font-size: 16px;
+  }
+
+  .list-descr__item {
+    font-size: 14px;
+    line-height: 15px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 11px;
+    }
+
+    &--line-height-1-6 {
+      line-height: 21px;
+    }
+  }
+
+  .list-descr__subtitle {
+    line-height: 1.5;
+  }
+
+  .list-descr__descr {
+    line-height: 1.8;
+  }
+
+  .benefit {
+    margin-bottom: 32px;
+  }
+
+  .benefit__title {
+    font-size: 14px;
+  }
+
+  .guarantees__title {
+    font-size: 16px;
+  }
+
+  .list-descr__item--line-height-1-7 {
+    line-height: 1.79;
+  }
+
+  .guarantees__text {
+    padding-top: 0px;
+    padding-right: 55px;
+    padding-bottom: 0px;
+    padding-left: 51px;
+    font-size: 16px;
+    background-size: 36px;
+  }
+}
+

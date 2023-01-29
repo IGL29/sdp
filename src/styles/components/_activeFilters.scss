@@ -1,0 +1,45 @@
+.active-filters {
+
+  &__active-filter {
+    margin-bottom: 16px;
+
+    &:not(:last-of-type) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.active-filter {
+  padding: 3px 4px 3px 10px;
+
+  &--color {
+
+    &-1 {
+      background-color: $lime-color;
+    }
+
+    &-2 {
+      background-color: $bone;
+    }
+
+    &-3 {
+      background-color: $pink-violet;
+    }
+
+    &-4 {
+      background-color: $md-gray;
+    }
+  }
+
+  &__text {
+    display: inline-block;
+  }
+
+  &__btn {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}

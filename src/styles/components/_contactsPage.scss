@@ -1,0 +1,70 @@
+.form-contacts {
+  display: flex;
+  margin-bottom: 32px;
+
+  &__wrap-input {
+    height: 54px;
+    margin-right: 32px;
+    flex: 0 1 624px;
+  }
+
+  &__btn {
+    padding: 18px 34px;
+  }
+}
+
+.map {
+  height: 510px;
+}
+
+.ymaps-2-1-79-balloon__close+.ymaps-2-1-79-balloon__content {
+  padding: 30px;
+}
+
+.balloon {
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 7px;
+    @include font-OpenSans(600);
+    font-size: 16px;
+  }
+}
+
+.address-map {
+  &__text {
+    margin-top: 0;
+    margin-bottom: 8px;
+    @include font-OpenSans(400);
+    font-size: 14px;
+    font-style: normal;
+  }
+
+  &__phone-link {
+    margin-bottom: 13px;
+    font-style: normal;
+  }
+}
+
+.wrap-descr {
+
+  &--padding {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  &--border {
+    border-top: 1px solid $gray-light;
+    border-bottom: 1px solid $gray-light;
+  }
+
+  &__head {
+    display: inline;
+    margin: 0;
+  }
+
+  &__descr {
+    display: inline;
+    margin: 0;
+  }
+}

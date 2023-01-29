@@ -1,0 +1,224 @@
+.useful {
+  margin-bottom: 66px;
+
+  &__swiper-wrap {
+    grid-column: 1/-1;
+    overflow: hidden;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+
+  &__swiper-slide {
+    display: flex;
+    height: initial;
+  }
+
+  &__title {
+    margin-bottom: 22px;
+  }
+}
+
+.swiper-wrapper {
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.article-useful {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 676px;
+  background-color: $gray-light;
+  border-radius: 10px;
+  overflow: hidden;
+
+  &__title {
+    margin-top: 0;
+    @include font-OpenSans(400);
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  &__link {
+    margin-top: auto;
+    @extend %reset-link;
+    align-self: flex-start;
+  }
+
+  &__image {
+    width: 100%;
+    height: 426px;
+    margin-bottom: 32px;
+    background-size: cover;
+
+    &--background {
+      &-1 {
+        background-image: url("img/useful-1.jpg");
+        background-repeat: no-repeat;
+        background-position: top;
+      }
+
+      &-2 {
+        background-image: url("img/useful-2.jpg");
+        background-repeat: no-repeat;
+        background-position: top;
+      }
+
+      &-3 {
+        background-image: url("img/useful-3.jpg");
+        background-repeat: no-repeat;
+        background-position: top;
+      }
+
+      &-4 {
+        background-image: url("img/useful-4.jpg");
+        background-repeat: no-repeat;
+        background-position: top;
+      }
+
+      &-5 {
+        background-image: url("img/useful-5.jpg");
+        background-repeat: no-repeat;
+        background-position: top;
+      }
+    }
+  }
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0 30px 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .article-useful {
+    min-height: 456px;
+
+    &__title {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    &__text-container {
+      padding: 0 30px 33px;
+    }
+
+    &__image {
+      height: 202px;
+      margin-bottom: 27px;
+
+      &--background {
+        &-1 {
+          background-image: url("img/useful-1-1024.jpg");
+        }
+
+        &-2 {
+          background-image: url("img/useful-2-1024.jpg");
+        }
+
+        &-3 {
+          background-image: url("img/useful-3-1024.jpg");
+        }
+
+        &-4 {
+          background-image: url("img/useful-4-1024.jpg");
+        }
+
+        &-5 {
+          background-image: url("img/useful-5-1024.jpg");
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .useful {
+    margin-bottom: 67px;
+  }
+
+  .article-useful {
+    &__image {
+      &--background {
+        &-1 {
+          background-image: url("img/useful-1-768.jpg");
+          background-size: cover;
+        }
+
+        &-2 {
+          background-image: url("img/useful-2-768.jpg");
+          background-size: cover;
+        }
+
+        &-3 {
+          background-image: url("img/useful-3-768.jpg");
+          background-size: cover;
+        }
+
+        &-4 {
+          background-image: url("img/useful-4-768.jpg");
+          background-size: cover;
+        }
+
+        &-5 {
+          background-image: url("img/useful-5-768.jpg");
+          background-size: cover;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .article-useful {
+    &__text-container {
+      padding-bottom: 27px;
+    }
+
+    &__image {
+      margin-bottom: 32px;
+
+      &--background {
+        &-1 {
+          background-image: url("img/useful-1-320.jpg");
+        }
+
+        &-2 {
+          background-image: url("img/useful-2-320.jpg");
+        }
+
+        &-3 {
+          background-image: url("img/useful-3-320.jpg");
+        }
+
+        &-4 {
+          background-image: url("img/useful-4-320.jpg");
+        }
+
+        &-5 {
+          background-image: url("img/useful-5-320.jpg");
+        }
+      }
+    }
+  }
+
+  .useful {
+    &__container {
+      grid-template-columns: 1fr;
+    }
+
+    &__wrap-swiper-btn {
+      grid-row: 3;
+      justify-self: center;
+    }
+
+    &__swiper-wrap {
+      margin-bottom: 18px;
+    }
+  }
+}

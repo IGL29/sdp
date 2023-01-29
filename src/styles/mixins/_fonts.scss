@@ -1,0 +1,9 @@
+@mixin font-OpenSans($weight) {
+  font-family: "OpenSans", sans-serif;
+  font-weight: $weight;
+}
+
+@mixin font-Playfair($weight) {
+  font-family: "PlayfairDisplay", sans-serif;
+  font-weight: $weight;
+}

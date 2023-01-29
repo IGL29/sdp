@@ -1,0 +1,270 @@
+<header class="header">
+  <div class="header__row-1 row-1">
+    <div class="row-1__container container">
+      <div class="row-1__wrap-select wrap-select">
+        <label class="wrap-select__label" for="region">Ваш регион:</label>
+        <select
+          class="wrap-select__select js-select-region"
+          name="region"
+          id="region"
+        >
+          <option class="wrap-select__option" value="Moscow">Москва</option>
+          <option class="wrap-select__option" value="Moscow">Казань</option>
+          <option class="wrap-select__option" value="Moscow">Уфа</option>
+          <option class="wrap-select__option" value="Moscow">Пермь</option>
+        </select>
+      </div>
+
+      <a class="row-1__phone-link phone-link" href="tel:+74958854547">
+        <svg class="phone-link__svg">
+          <use xlink:href="img/sprite.svg#phone"></use>
+        </svg>
+        +7 (495) 885-45-47
+      </a>
+
+      <ul class="row-1__list-links list-links">
+        <li class="list-links__item">
+          <a href="" class="list-links__link">О компании</a>
+        </li>
+        <li class="list-links__item">
+          <a href="" class="list-links__link">Гарантия и возврат</a>
+        </li>
+        <li class="list-links__item">
+          <a href="" class="list-links__link">Корпоративным клиентам</a>
+        </li>
+        <li class="list-links__item">
+          <a href="" class="list-links__link">Дизайн-решение</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="header__row-2 row-2">
+    <div class="row-2__container container">
+      <ul class="row-2__list-links list-links">
+        <li class="list-links__item">
+          <a href="" class="list-links__link">О компании</a>
+        </li>
+        <li class="list-links__item">
+          <a href="" class="list-links__link">Гарантия и возврат</a>
+        </li>
+        <li class="list-links__item">
+          <a href="" class="list-links__link">Корпоративным клиентам</a>
+        </li>
+        <li class="list-links__item">
+          <a href="" class="list-links__link">Дизайн-решение</a>
+        </li>
+      </ul>
+
+      <button
+        class="row-2__user-btn user-btn"
+        aria-label="перейти в личный кабинет"
+      >
+        <svg class="user-btn__svg">
+          <use xlink:href="img/sprite.svg#user"></use>
+        </svg>
+      </button>
+
+      <button
+        class="row-2__cart-btn cart-btn"
+        data-count="0"
+        aria-label="открыть корзину товаров"
+      >
+        <svg class="cart-btn__svg">
+          <use xlink:href="img/sprite.svg#cart"></use>
+        </svg>
+      </button>
+
+      <a class="row-2__logo-link logo-link" href="index.html">
+        <img
+          class="logo-link__img"
+          src="img/sprite.svg#logo"
+          alt="Логотип SitDownPls"
+        />
+      </a>
+    </div>
+  </div>
+
+  <div class="header__row-3 row-3">
+    <div class="row-3__container container">
+      <button
+        id="burger-btn"
+        class="row-3__burger burger"
+        aria-label="Открыть меню"
+      >
+        <span class="burger__line burger__line--top"></span>
+        <span class="burger__line burger__line--middle"></span>
+        <span class="burger__line burger__line--bottom"></span>
+      </button>
+
+      <a class="row-3__logo-link logo-link" href="index.html">
+        <img
+          class="logo-link__img"
+          src="img/sprite.svg#logo"
+          alt="Логотип SitDownPls"
+        />
+      </a>
+
+      <nav class="row-3__nav nav">
+        <ul class="nav__menu-list menu-list">
+          <li class="menu-list__item menu-list__item--margin">
+            <a href="catalogPage.html" class="menu-list__link">Каталог</a>
+          </li>
+          <li class="menu-list__item menu-list__item--margin">
+            <a href="#" class="menu-list__link">Магазины</a>
+          </li>
+          <li class="menu-list__item menu-list__item--margin">
+            <a href="#" class="menu-list__link">Шоу-рум</a>
+          </li>
+          <li class="menu-list__item menu-list__item--margin">
+            <a href="#" class="menu-list__link">Доставка и оплата</a>
+          </li>
+          <li class="menu-list__item menu-list__item--margin">
+            <a href="#" class="menu-list__link">Дисконт</a>
+          </li>
+          <li class="menu-list__item menu-list__item--margin">
+            <a href="contactsPage.html" class="menu-list__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="row-3__user-btn user-btn">
+        <svg class="user-btn__svg">
+          <use xlink:href="img/sprite.svg#user"></use>
+        </svg>
+      </button>
+
+      <button class="row-3__cart-btn cart-btn" data-count="0">
+        <svg class="cart-btn__svg">
+          <use xlink:href="img/sprite.svg#cart"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="header__row-4 row-4">
+    <div class="row-4__container container">
+      <form id="search-form" class="row-4__form-search form-search">
+        <input
+          class="form-search__input"
+          type="text"
+          placeholder="Я хочу купить..."
+        />
+        <div class="form-search__border"></div>
+
+        <div class="form-search__wrap-icon wrap-icon">
+          <svg id="icon-search" class="wrap-icon__svg">
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
+        </div>
+
+        <button
+          class="form-search__arrow-btn arrow-btn"
+          aria-label="найти товар"
+        >
+          <svg
+            class="arrow-btn__svg arrow-svg"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="16" cy="16" r="15" stroke-width="2" />
+            <path
+              d="M14 11L19 16L14 21"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </form>
+
+      <select
+        class="wrap-fields__select-category select-category js-select-category"
+        name="category"
+      >
+        <option value="">Категория</option>
+        <option class="select-category__option" value="sofas">Диваны</option>
+        <option class="select-category__option" value="chairs">Кресла</option>
+        <option class="select-category__option" value="Puffy">Пуфы</option>
+        <option class="select-category__option" value="bed">Кровати</option>
+        <option class="select-category__option" value="bedsideTable">
+          Тумбы
+        </option>
+        <option class="select-category__option" value="chest">Комоды</option>
+        <option class="select-category__option" value="chairs">Стулья</option>
+        <option class="select-category__option" value="table">Столы</option>
+        <option class="select-category__option" value="accessories">
+          Аксессуары
+        </option>
+      </select>
+
+      <button
+        class="row-4__user-btn user-btn"
+        aria-label="перейти в личный кабинет"
+      >
+        <svg class="user-btn__svg">
+          <use xlink:href="img/sprite.svg#user"></use>
+        </svg>
+      </button>
+
+      <button
+        class="row-4__cart-btn cart-btn"
+        data-count="0"
+        aria-label="открыть корзину товаров"
+      >
+        <svg class="cart-btn__svg">
+          <use xlink:href="img/sprite.svg#cart"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="burger-menu" class="burger-menu burger-menu--visibility-hidden">
+    <div class="burger-menu__container container">
+      <nav class="burger-menu__nav nav">
+        <ul class="nav__menu-list menu-list menu-list--burger-menu">
+          <li class="menu-list__item menu-list__item--position-1">
+            <a href="catalogPage.html" class="menu-list__link">Каталог</a>
+          </li>
+          <li class="menu-list__item menu-list__item--position-2">
+            <a href="#" class="menu-list__link">Магазины</a>
+          </li>
+          <li class="menu-list__item menu-list__item--position-3">
+            <a href="#" class="menu-list__link">Шоу-рум</a>
+          </li>
+          <li class="menu-list__item menu-list__item--position-4">
+            <a href="#" class="menu-list__link">Доставка и оплата</a>
+          </li>
+          <li class="menu-list__item menu-list__item--position-5">
+            <a href="#" class="menu-list__link">Дисконт</a>
+          </li>
+          <li class="menu-list__item menu-list__item--position-6">
+            <a href="contactsPage.html" class="menu-list__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="burger-menu__burger-footer burger-footer">
+      <div class="burger-footer__container container">
+        <ul class="burger-footer__list-links list-links">
+          <li class="list-links__item">
+            <a href="" class="list-links__link">О компании</a>
+          </li>
+          <li class="list-links__item">
+            <a href="" class="list-links__link">Гарантия и возврат</a>
+          </li>
+          <li class="list-links__item">
+            <a href="" class="list-links__link">Корпоративным клиентам</a>
+          </li>
+          <li class="list-links__item list-links__item--position">
+            <a href="" class="list-links__link">Дизайн-решение</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>

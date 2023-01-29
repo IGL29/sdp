@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SitDownPls</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body">
+    @include("./partials/header.html")
+    @include("./partials/catalogPage/breadCrumbs.html")
+
+    <main class="main">
+      <div class="catalog-container container">
+        @include("./partials/catalogPage/filters.html")
+        @include("./partials/catalogPage/catalog.html")
+      </div>
+    </main>
+
+    @include("./partials/footer.html")
+    <script type="module" src="scripts/catalogPage.js"></script>
+  </body>
+</html>
